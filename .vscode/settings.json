@@ -1,9 +1,13 @@
 {
     "cSpell.words": [
         "ASPNETCORE",
+        "bootswatch",
+        "datepicker",
         "datingapp",
         "Datting",
         "hmac",
-        "HMACSHA"
+        "HMACSHA",
+        "titlecase",
+        "toastr"
     ]
 }
