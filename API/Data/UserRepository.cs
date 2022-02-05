@@ -21,7 +21,7 @@ namespace API.Data
             _context = context;
         }
 
-        public async Task<MemberDto> GetMermberAsync(string username)
+        public async Task<MemberDto> GetMemberAsync(string username)
         {
             return await _context.Users
                 .Where(x => x.UserName == username)
@@ -29,7 +29,7 @@ namespace API.Data
                 .SingleOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<MemberDto>> GetMermbersAsync()
+        public async Task<IEnumerable<MemberDto>> GetMembersAsync()
         {
             return await _context.Users
                 .ProjectTo<MemberDto>(_mapper.ConfigurationProvider)
