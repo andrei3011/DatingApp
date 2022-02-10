@@ -2,6 +2,7 @@
     "cSpell.words": [
         "ASPNETCORE",
         "bootswatch",
+        "chronos",
         "Cloudinary",
         "datepicker",
         "datingapp",
@@ -10,6 +11,7 @@
         "HMACSHA",
         "kolkov",
         "tabset",
+        "Timeago",
         "titlecase",
         "toastr"
     ]
