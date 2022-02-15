@@ -10,6 +10,7 @@ import { defineLocale, roLocale } from 'ngx-bootstrap/chronos';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TimeagoModule } from 'ngx-timeago';
+import { ModalModule } from 'ngx-bootstrap/modal';
 defineLocale('ro', roLocale);
 
 @NgModule({
@@ -27,6 +28,7 @@ defineLocale('ro', roLocale);
     PaginationModule.forRoot(),
     ButtonsModule.forRoot(),
     TimeagoModule.forRoot(),
+    ModalModule.forRoot(),
   ],
   exports: [
     BsDropdownModule,
@@ -38,6 +40,7 @@ defineLocale('ro', roLocale);
     PaginationModule,
     ButtonsModule,
     TimeagoModule,
+    ModalModule,
   ],
 })
 export class SharedModule {
