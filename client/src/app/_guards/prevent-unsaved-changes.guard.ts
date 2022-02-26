@@ -8,6 +8,7 @@ import {
 } from '@angular/router';
 import { Observable } from 'rxjs';
 import { MemberEditComponent } from '../members/member-edit/member-edit.component';
+import { ConfirmService } from '../_services/confirm.service';
 
 @Injectable({
   providedIn: 'root',
@@ -15,6 +16,8 @@ import { MemberEditComponent } from '../members/member-edit/member-edit.componen
 export class PreventUnsavedChangesGuard
   implements CanActivate, CanDeactivate<unknown>
 {
+  constructor(private confirmService: ConfirmService) {}
+
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
@@ -25,11 +28,9 @@ export class PreventUnsavedChangesGuard
     | UrlTree {
     return true;
   }
-  canDeactivate(component: MemberEditComponent): boolean {
+  canDeactivate(component: MemberEditComponent): Observable<boolean> | boolean {
     if (component.editForm.dirty)
-      return confirm(
-        'Are u sure you want to continue? Any unsaved changes ill be lost!'
-      );
+      return this.confirmService.confirm();
     return true;
   }
 }
