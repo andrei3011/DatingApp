@@ -10,6 +10,7 @@
         "hmac",
         "HMACSHA",
         "kolkov",
+        "signalr",
         "tabset",
         "Timeago",
         "titlecase",
