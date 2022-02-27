@@ -7,6 +7,7 @@
         "datepicker",
         "datingapp",
         "Datting",
+        "devkit",
         "hmac",
         "HMACSHA",
         "kolkov",
@@ -14,6 +15,7 @@
         "tabset",
         "Timeago",
         "titlecase",
-        "toastr"
+        "toastr",
+        "wwwroot"
     ]
 }
