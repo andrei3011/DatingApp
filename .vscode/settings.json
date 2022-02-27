@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "appuser",
         "ASPNETCORE",
         "bootswatch",
         "chronos",
@@ -11,6 +12,7 @@
         "hmac",
         "HMACSHA",
         "kolkov",
+        "Npgsql",
         "signalr",
         "tabset",
         "Timeago",
